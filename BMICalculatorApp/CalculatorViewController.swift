@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import CoreData
 
 class CalculatorViewController: UIViewController {
 
     
     
+    @IBOutlet weak var inputName: UITextField!
     @IBOutlet weak var inputWeight: UITextField!
     
     @IBOutlet weak var inputHeight: UITextField!
@@ -23,6 +25,9 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var bmiMessage: UILabel!
     var calculatedBMI:Double = 0.0
     var message = ""
+    
+    var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,12 +43,13 @@ class CalculatorViewController: UIViewController {
     {
         
         let title = standardUnit.titleForSegment(at: standardUnit.selectedSegmentIndex)
-        print(title)
+        //print(title)
         
         
         let height = Double(inputHeight.text!)
         let weight = Double(inputWeight.text!)
-     
+        let name = inputName.text!
+        
         if title == "Metric"
         {
             calculatedBMI = calculateMetricBMI(_height: height!, _weight: weight!)
@@ -61,6 +67,8 @@ class CalculatorViewController: UIViewController {
         message = printMessage(_bmi: calculatedBMI)
         //print(message)
         bmiMessage.text! = "You are \(message)"
+        
+        storeDataInEntity(_name: name, _bmi: calculatedBMI, _message: message)
     }
   
     func calculateMetricBMI(_height:Double, _weight:Double) -> Double
@@ -112,6 +120,20 @@ class CalculatorViewController: UIViewController {
         else
         {
             return "Very Severely Obese"
+        }
+    }
+    
+    func storeDataInEntity(_name:String, _bmi:Double, _message:String)
+    {
+        let data = NSEntityDescription.insertNewObject(forEntityName:"BMIEntity", into: context)
+        data.setValue(_name, forKey: "name")
+        data.setValue(_bmi, forKey: "bmi")
+        data.setValue(_message, forKey: "msg")
+        do{
+            try context.save()
+        }
+        catch{
+            print(error)
         }
     }
     
