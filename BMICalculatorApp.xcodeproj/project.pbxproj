@@ -13,6 +13,8 @@
 		FF27B3C621C338F500612924 /* BMICalculatorApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF27B3C421C338F500612924 /* BMICalculatorApp.xcdatamodeld */; };
 		FF27B3C821C338F800612924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF27B3C721C338F800612924 /* Assets.xcassets */; };
 		FF27B3CB21C338F800612924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF27B3C921C338F800612924 /* LaunchScreen.storyboard */; };
+		FF27B3D321C33A1E00612924 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27B3D221C33A1E00612924 /* CalculatorViewController.swift */; };
+		FF27B3D521C33A3600612924 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27B3D421C33A3600612924 /* RecordsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FF27B3C721C338F800612924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF27B3CA21C338F800612924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF27B3CC21C338F800612924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF27B3D221C33A1E00612924 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		FF27B3D421C33A3600612924 /* RecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				FF27B3C921C338F800612924 /* LaunchScreen.storyboard */,
 				FF27B3CC21C338F800612924 /* Info.plist */,
 				FF27B3C421C338F500612924 /* BMICalculatorApp.xcdatamodeld */,
+				FF27B3D221C33A1E00612924 /* CalculatorViewController.swift */,
+				FF27B3D421C33A3600612924 /* RecordsViewController.swift */,
 			);
 			path = BMICalculatorApp;
 			sourceTree = "<group>";
@@ -140,7 +146,9 @@
 			files = (
 				FF27B3C021C338F500612924 /* ViewController.swift in Sources */,
 				FF27B3BE21C338F500612924 /* AppDelegate.swift in Sources */,
+				FF27B3D321C33A1E00612924 /* CalculatorViewController.swift in Sources */,
 				FF27B3C621C338F500612924 /* BMICalculatorApp.xcdatamodeld in Sources */,
+				FF27B3D521C33A3600612924 /* RecordsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
