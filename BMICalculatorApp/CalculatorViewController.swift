@@ -59,7 +59,8 @@ class CalculatorViewController: UIViewController {
         }
         
         message = printMessage(_bmi: calculatedBMI)
-        print(message)
+        //print(message)
+        bmiMessage.text! = "You are \(message)"
     }
   
     func calculateMetricBMI(_height:Double, _weight:Double) -> Double
@@ -67,7 +68,6 @@ class CalculatorViewController: UIViewController {
         //print("you are in metric")
         
        return (_weight / (_height*_height))
-    
         
     }
     
@@ -79,7 +79,40 @@ class CalculatorViewController: UIViewController {
     
     func printMessage(_bmi:Double) -> String
     {
-        return String(_bmi)
+        //return String(_bmi)
+        if(_bmi < 16.0)
+        {
+            return "Severely Thin"
+        }
+        else if(_bmi < 16.99)
+        {
+            return "Moderately Thin"
+        }
+        else if(_bmi < 18.49)
+        {
+            return "Slightly Thin"
+            
+        }
+        else if(_bmi < 24.99)
+        {
+            return "Normal"
+        }
+        else if(_bmi < 29.99)
+        {
+            return "Overweight"
+        }
+        else if(_bmi < 34.99)
+        {
+            return "Moderately Obese"
+        }
+        else if(_bmi < 39.99)
+        {
+            return "Severely Obese"
+        }
+        else
+        {
+            return "Very Severely Obese"
+        }
     }
     
 }
