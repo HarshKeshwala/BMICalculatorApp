@@ -196,23 +196,20 @@
                                 <state key="normal" title="Calculate">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculateButton:" destination="s7V-mr-EiM" eventType="touchUpInside" id="Ll1-Mj-e5d"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3u-ca-f25">
-                                <rect key="frame" x="168" y="497" width="43" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="J9y-We-0hl"/>
-                                    <constraint firstAttribute="width" constant="43" id="POF-It-701"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmY-Ga-L0e">
+                                <rect key="frame" x="50" y="502" width="287" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2t5-38-AsA">
-                                <rect key="frame" x="169" y="549" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="13l-dP-OXH"/>
-                                    <constraint firstAttribute="height" constant="21" id="Qpm-VY-1gG"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4o-96-OEp">
+                                <rect key="frame" x="49" y="549" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -221,14 +218,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cJI-o0-jQv" firstAttribute="top" secondItem="hlf-JD-nUX" secondAttribute="bottom" constant="12" id="0s5-TS-gta"/>
-                            <constraint firstItem="2t5-38-AsA" firstAttribute="leading" secondItem="glB-gp-UMj" secondAttribute="leading" constant="169" id="1jN-BU-A5g"/>
                             <constraint firstItem="dnM-ad-y7R" firstAttribute="top" secondItem="glB-gp-UMj" secondAttribute="top" constant="24" id="3Gb-t8-r57"/>
-                            <constraint firstItem="glB-gp-UMj" firstAttribute="trailing" secondItem="2t5-38-AsA" secondAttribute="trailing" constant="164" id="40m-Na-Kcv"/>
                             <constraint firstItem="glB-gp-UMj" firstAttribute="trailing" secondItem="qbH-nb-FUs" secondAttribute="trailing" constant="38" id="4K8-Zd-Brr"/>
                             <constraint firstItem="hlf-JD-nUX" firstAttribute="leading" secondItem="kR9-3R-elM" secondAttribute="trailing" constant="71" id="5Zy-td-t1k"/>
                             <constraint firstItem="CSz-fS-xth" firstAttribute="top" secondItem="MoJ-WV-XwH" secondAttribute="bottom" constant="21" id="68w-9w-h6S"/>
                             <constraint firstItem="kR9-3R-elM" firstAttribute="leading" secondItem="glB-gp-UMj" secondAttribute="leading" constant="46" id="9II-ah-f2C"/>
-                            <constraint firstItem="2t5-38-AsA" firstAttribute="top" secondItem="E3u-ca-f25" secondAttribute="bottom" constant="31" id="ADh-YG-RjX"/>
                             <constraint firstItem="glB-gp-UMj" firstAttribute="trailing" secondItem="hlf-JD-nUX" secondAttribute="trailing" constant="75" id="D6l-GC-tWT"/>
                             <constraint firstItem="iSM-6X-oA3" firstAttribute="leading" secondItem="glB-gp-UMj" secondAttribute="leading" constant="50" id="Ex3-07-cGm"/>
                             <constraint firstItem="ggO-n2-Qwd" firstAttribute="leading" secondItem="0Nz-ak-Etg" secondAttribute="trailing" constant="49" id="FSU-gJ-2Y7"/>
@@ -246,13 +240,9 @@
                             <constraint firstItem="qbH-nb-FUs" firstAttribute="top" secondItem="CSz-fS-xth" secondAttribute="bottom" constant="31" id="UjA-Lc-x7A"/>
                             <constraint firstItem="glB-gp-UMj" firstAttribute="trailing" secondItem="dnM-ad-y7R" secondAttribute="trailing" constant="109" id="Y6c-Ek-W7U"/>
                             <constraint firstItem="TOR-TD-SLz" firstAttribute="leading" secondItem="iSM-6X-oA3" secondAttribute="trailing" constant="41" id="YDN-gl-imF"/>
-                            <constraint firstItem="glB-gp-UMj" firstAttribute="trailing" secondItem="E3u-ca-f25" secondAttribute="trailing" constant="164" id="Yv0-QU-ecU"/>
                             <constraint firstItem="glB-gp-UMj" firstAttribute="trailing" secondItem="CSz-fS-xth" secondAttribute="trailing" constant="80" id="ZY3-Qn-jHR"/>
                             <constraint firstItem="MoJ-WV-XwH" firstAttribute="leading" secondItem="AFF-bU-qyZ" secondAttribute="trailing" constant="36" id="ZYj-VD-VxK"/>
-                            <constraint firstItem="glB-gp-UMj" firstAttribute="bottom" secondItem="2t5-38-AsA" secondAttribute="bottom" constant="48" id="a8G-3W-3Fj"/>
-                            <constraint firstItem="E3u-ca-f25" firstAttribute="leading" secondItem="glB-gp-UMj" secondAttribute="leading" constant="168" id="aC2-QN-2J4"/>
                             <constraint firstItem="Dij-0p-iaO" firstAttribute="leading" secondItem="glB-gp-UMj" secondAttribute="leading" constant="49" id="aMg-VA-m4O"/>
-                            <constraint firstItem="glB-gp-UMj" firstAttribute="trailing" secondItem="E3u-ca-f25" secondAttribute="trailing" constant="164" id="ag2-Dr-ru1"/>
                             <constraint firstItem="glB-gp-UMj" firstAttribute="trailing" secondItem="TOR-TD-SLz" secondAttribute="trailing" constant="38" id="cWO-H0-A5d"/>
                             <constraint firstItem="qbH-nb-FUs" firstAttribute="leading" secondItem="glB-gp-UMj" secondAttribute="leading" constant="57" id="eD3-8v-JUB"/>
                             <constraint firstItem="kR9-3R-elM" firstAttribute="top" secondItem="0Nz-ak-Etg" secondAttribute="bottom" constant="23" id="ecg-dB-Oez"/>
@@ -260,14 +250,19 @@
                             <constraint firstItem="hlf-JD-nUX" firstAttribute="top" secondItem="ggO-n2-Qwd" secondAttribute="bottom" constant="13" id="hE6-qU-gLg"/>
                             <constraint firstItem="dnM-ad-y7R" firstAttribute="leading" secondItem="glB-gp-UMj" secondAttribute="leading" constant="133" id="lUz-gZ-pqF"/>
                             <constraint firstItem="cJI-o0-jQv" firstAttribute="leading" secondItem="Dij-0p-iaO" secondAttribute="trailing" constant="35" id="qv8-Im-ceO"/>
-                            <constraint firstItem="glB-gp-UMj" firstAttribute="bottom" secondItem="2t5-38-AsA" secondAttribute="bottom" constant="48" id="uEq-Js-Ruf"/>
-                            <constraint firstItem="glB-gp-UMj" firstAttribute="trailing" secondItem="2t5-38-AsA" secondAttribute="trailing" constant="164" id="wqh-K0-GDk"/>
                             <constraint firstItem="glB-gp-UMj" firstAttribute="trailing" secondItem="cJI-o0-jQv" secondAttribute="trailing" constant="38" id="wrI-Yd-ttQ"/>
                             <constraint firstItem="glB-gp-UMj" firstAttribute="trailing" secondItem="MoJ-WV-XwH" secondAttribute="trailing" constant="38" id="xi7-Kj-CVl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="glB-gp-UMj"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calculate BMI" id="Gc6-oL-Gh5"/>
+                    <connections>
+                        <outlet property="bmiMessage" destination="F4o-96-OEp" id="gsb-1N-3Vo"/>
+                        <outlet property="bmiResult" destination="kmY-Ga-L0e" id="ZIc-Cv-Rl5"/>
+                        <outlet property="inputHeight" destination="MoJ-WV-XwH" id="uru-iz-ELx"/>
+                        <outlet property="inputWeight" destination="cJI-o0-jQv" id="a7E-eH-0cQ"/>
+                        <outlet property="standardUnit" destination="CSz-fS-xth" id="wvp-aZ-l5z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g3I-3n-vkZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
